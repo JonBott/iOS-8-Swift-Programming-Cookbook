@@ -423,6 +423,7 @@
 				9DFDAA691964273C0061C88C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DFDAA6A1964273C0061C88C /* Build configuration list for PBXNativeTarget "Providing Header and Footer in a Collection ViewTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				9DFDAA6C1964273C0061C88C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
