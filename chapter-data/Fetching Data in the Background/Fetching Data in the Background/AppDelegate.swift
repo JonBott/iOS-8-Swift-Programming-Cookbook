@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func application(application: UIApplication!,
-    didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+    didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
       
       /* Set up the background context */
       let backgroundContext = NSManagedObjectContext(
@@ -97,7 +97,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       return true
   }
   
-  func applicationWillTerminate(application: UIApplication!) {
+  func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     self.saveContext()

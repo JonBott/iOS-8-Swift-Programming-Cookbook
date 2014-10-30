@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   /* 1 */
 //  func application(application: UIApplication!,
-//    didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+//    didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
 //      
 //      /* Create the entities first */
 //      createNewPersonWithFirstName("Anthony", lastName: "Robbins", age: 52)
@@ -84,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   /* 2 */
   func application(application: UIApplication!,
-    didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+    didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
       
       /* Create the entities first */
       createNewPersonWithFirstName("Anthony", lastName: "Robbins", age: 52)
@@ -132,7 +132,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       return true
   }
   
-  func applicationWillTerminate(application: UIApplication!) {
+  func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     self.saveContext()

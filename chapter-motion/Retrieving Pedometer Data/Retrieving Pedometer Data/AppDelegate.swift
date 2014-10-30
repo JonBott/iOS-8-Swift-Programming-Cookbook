@@ -17,11 +17,11 @@
 //  lazy var pedometer = CMPedometer()
 //
 //  func application(application: UIApplication!,
-//    didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+//    didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
 //      return true
 //  }
 //
-//  func applicationDidBecomeActive(application: UIApplication!) {
+//  func applicationDidBecomeActive(application: UIApplication) {
 //    if CMPedometer.isStepCountingAvailable(){
 //
 //      pedometer.startPedometerUpdatesFromDate(NSDate(), withHandler: {
@@ -36,7 +36,7 @@
 //    }
 //  }
 //
-//  func applicationWillResignActive(application: UIApplication!) {
+//  func applicationWillResignActive(application: UIApplication) {
 //    pedometer.stopPedometerUpdates()
 //  }
 //
@@ -64,11 +64,11 @@
 //  lazy var pedometer = CMPedometer()
 //  
 //  func application(application: UIApplication!,
-//    didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+//    didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
 //      return true
 //  }
 //  
-//  func applicationDidBecomeActive(application: UIApplication!) {
+//  func applicationDidBecomeActive(application: UIApplication) {
 //    
 //    /* Can we ask for distance updates? */
 //    if CMPedometer.isDistanceAvailable(){
@@ -87,7 +87,7 @@
 //    }
 //  }
 //  
-//  func applicationWillResignActive(application: UIApplication!) {
+//  func applicationWillResignActive(application: UIApplication) {
 //    pedometer.stopPedometerUpdates()
 //  }
 //  
@@ -113,11 +113,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   lazy var pedometer = CMPedometer()
   
   func application(application: UIApplication!,
-    didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+    didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
       return true
   }
   
-  func applicationDidBecomeActive(application: UIApplication!) {
+  func applicationDidBecomeActive(application: UIApplication) {
     
     /* Can we ask for floor climb/descending updates? */
     if CMPedometer.isFloorCountingAvailable(){
@@ -136,7 +136,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
   }
   
-  func applicationWillResignActive(application: UIApplication!) {
+  func applicationWillResignActive(application: UIApplication) {
     pedometer.stopPedometerUpdates()
   }
   
